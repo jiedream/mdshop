@@ -52,18 +52,19 @@ CREATE TABLE md_product(
     pid INT PRIMARY KEY AUTO_INCREMENT,
     img VARCHAR(128),
     title VARCHAR(64),
+    subtitle VARCHAR(128),
     stad VARCHAR(32),
     price DECIMAL(10,2)
 );
 #向商品表中插入数据
 INSERT INTO md_product VALUES
-(NULL,'img/product/TKWcj3Tlfd6sKznjxeCQhg.webp','袋/120g','三只松鼠_开行果',39.9),
-(NULL,'img/product/AOQfwt_WgL2KgVMnJIrmfQ.webp','袋/120g','三只松鼠_炭烧腰果90g',24.9),
-(NULL,'img/product/ioB7KXkC4xK5DlbxZJZWvg.webp','袋/120g','三只松鼠_碧根果',27.5),
-(NULL,'img/product/FLngVLQHW2JBz5N47VRNlQ.webp','袋/120g','三只松鼠_蜀香牛肉',29.9),
-(NULL,'img/product/ePMyNFMa18SW8EFbl2t1-g.webp','袋/120g','三只松鼠_海之脆 海苔夹心36g',26.9),
-(NULL,'img/product/lTRMVQqCmtTQlPz_vGlvow.jpg','袋/120g','百草味_夏威夷果',24.8),
-(NULL,'img/product/myJ8RvEcYHA9dweWuaoKVQ.jpg','袋/120g','百草味_y盐焗味开心果',34.9),
-(NULL,'img/product/pDH5hKQY1Hua6kWcPq500g.jpg','袋/120g','百草味_炭烧腰果',23.9),
-(NULL,'img/product/HNX0Yx3pBObTfjyAs623dA.jpg','袋/120g','百草味_东北松子',36.9),
-(NULL,'img/product/MzsKE8IL7wR6qxROQqhtnA.jpg','袋/120g','百草味_金猪报副零食包',59.9)
+(NULL,'img/product/TKWcj3Tlfd6sKznjxeCQhg.webp','三只松鼠_开行果','threesquirrels 休闲零食每日坚果特产炒货原味无漂白 袋装 带壳','袋/120g',39.9),
+(NULL,'img/product/AOQfwt_WgL2KgVMnJIrmfQ.webp','三只松鼠_炭烧腰果90g','坚果零食每日坚果特产干果仁','袋/120g',24.9),
+(NULL,'img/product/ioB7KXkC4xK5DlbxZJZWvg.webp','三只松鼠_碧根果','threesquirrels 每日坚果特产山核桃长寿果碧更果 袋装 带壳 奶油味','袋/120g',27.5),
+(NULL,'img/product/FLngVLQHW2JBz5N47VRNlQ.webp','三只松鼠_蜀香牛肉','threesquirrels 蜀香牛肉麻辣味100g/袋(休闲零食）牛肉类袋装','袋/120g',29.9),
+(NULL,'img/product/ePMyNFMa18SW8EFbl2t1-g.webp','三只松鼠_海之脆 海苔夹心36g','休闲零食小吃海味即食','袋/120g',26.9),
+(NULL,'img/product/lTRMVQqCmtTQlPz_vGlvow.jpg','百草味_夏威夷果','坚果蜜饯休闲零食特产干果炒货送开口器满减','袋/120g',24.8),
+(NULL,'img/product/myJ8RvEcYHA9dweWuaoKVQ.jpg','百草味_y盐焗味开心果','休闲零食每日坚果干果炒货特产大颗粒原色无漂白食品满减','袋/120g',34.9),
+(NULL,'img/product/pDH5hKQY1Hua6kWcPq500g.jpg','百草味_炭烧腰果','休闲零食每日坚果干果炒货特产大颗粒原色无漂白食品满减','袋/120g',23.9),
+(NULL,'img/product/HNX0Yx3pBObTfjyAs623dA.jpg','百草味_东北松子','休闲零食每日坚果干果炒货特产大颗粒原色无漂白食品满减','袋/120g',36.9),
+(NULL,'img/product/MzsKE8IL7wR6qxROQqhtnA.jpg','百草味_金猪报副零食包','休闲零食每日坚果干果炒货特产大颗粒原色无漂白食品满减','袋/120g',59.9)

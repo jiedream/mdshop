@@ -44,11 +44,13 @@ p{
 .product-container>div>p{
     /* background-color: chocolate; */
     margin-left:10px; 
-    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .product-container>div>span{
-    float:left;
-    margin: 5px 0 5px 10px;
+    float: left;
+    margin: 10px 0 5px 10px;
     padding: 2px 5px;
     background-color: red;
     border-radius: 25px;

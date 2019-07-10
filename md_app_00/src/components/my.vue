@@ -47,7 +47,14 @@ export default {
     [Icon.name]: Icon,
     [Cell.name]: Cell,
     [CellGroup.name]: CellGroup
-  }
+  },
+  methods: {
+    myback(){
+      this.$router.push({
+        path:'/'
+      })
+    }
+  },
 };
 </script>
 

@@ -27,7 +27,7 @@
         <div class="product-container">
             <div v-for="(item,index) of product" :key="index" @click="jumpDetails(item.pid)">
                 <img :src="item.img">
-                <p>{{item.title}}</p>
+                <p class="product-title">{{item.title}}</p>
                 <span>￥{{item.price}}</span>
             </div>
         </div>
@@ -35,9 +35,9 @@
         <!-- 底部tabbar -->
         <van-tabbar v-model="active" route>
             <van-tabbar-item name="home" icon="home-o">首页</van-tabbar-item>
-            <van-tabbar-item name="search" icon="search">订单</van-tabbar-item>
+            <van-tabbar-item name="search" icon="search" to="/dingdan">订单</van-tabbar-item>
             <van-tabbar-item name="friends" icon="friends-o" to="/cart">购物车</van-tabbar-item>
-            <van-tabbar-item name="setting" icon="setting-o">我的</van-tabbar-item>
+            <van-tabbar-item name="setting" icon="setting-o" to="/my">我的</van-tabbar-item>
         </van-tabbar>
     </div>
 </template>

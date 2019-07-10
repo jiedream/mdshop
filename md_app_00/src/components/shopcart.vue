@@ -34,11 +34,11 @@ import { Checkbox, CheckboxGroup, Card, SubmitBar, Toast } from 'vant';
 import titlebar from './TitleBar'
 export default {
   components: {
-    "titlebar":titlebar,
     [Card.name]: Card,
     [Checkbox.name]: Checkbox,
     [SubmitBar.name]: SubmitBar,
-    [CheckboxGroup.name]: CheckboxGroup
+    [CheckboxGroup.name]: CheckboxGroup,
+    'titlebar':titlebar
   },
   data() {
     return {
@@ -84,9 +84,8 @@ export default {
       Toast('点击结算');
     },
     myback(){
-      console.log("1");
       this.$router.push({
-        path:'/'
+        path:"/"
       })
     }
   }
