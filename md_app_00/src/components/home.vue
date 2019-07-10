@@ -97,6 +97,7 @@ export default {
                 var rows=this.product.concat(result.data.data);
                 this.product=rows;
             })
+            
         }
     }
 }

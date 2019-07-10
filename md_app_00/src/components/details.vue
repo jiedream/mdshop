@@ -23,12 +23,12 @@
             <van-goods-action-icon
                 icon="cart-o"
                 text="购物车"
-                @click="onClickIcon"
+                @click="onClickCart"
             />
             <van-goods-action-button
                 type="warning"
                 text="加入购物车"
-                @click="onClickButton"
+                @click="onClickButton(proList.pid)"
             />
             <van-goods-action-button
                 type="danger"
@@ -71,15 +71,21 @@ export default {
                console.log(rows)
            })
         },
+        onClickCart(){
+            this.$router.push({
+                path:'/cart'
+            })
+        },
         onClickIcon() {
             this.$dialog.alert({
                 message: '暂未开通'
             });
         },
-        onClickButton() {
-            this.$dialog.alert({
-                message: '有待开通'
-            });
+        onClickButton(id) {
+            this.$router.push({
+                path:'/cart',
+                query:{id}
+            })
         }
     }
 }

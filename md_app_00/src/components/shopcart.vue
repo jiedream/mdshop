@@ -42,6 +42,7 @@ export default {
   },
   data() {
     return {
+      pid:this.$route.query.id,
       checkedGoods: ['1', '2', '3'],
       goods: [{
         id: '1',
