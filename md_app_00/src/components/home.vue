@@ -76,7 +76,7 @@ export default {
         },
         // 数据库加载轮播图
         loadcar(){
-            var url="http://127.0.0.1:3000/carousel";
+            var url="carousel";
             this.axios.get(url).then(result=>{
                 var rows=this.imgList.concat(result.data.data);
                 this.imgList=rows;
@@ -84,7 +84,7 @@ export default {
         },
         // 数据库加载分类图
         loadify(){
-            var url="http://localhost:3000/classify";
+            var url="classify";
             this.axios.get(url).then(result=>{
                 var rows=this.classify.concat(result.data.data);
                 this.classify=rows;
@@ -92,7 +92,7 @@ export default {
         },
         // 数据库加载首页商品信息
         loadproduct(){
-            var url="http://localhost:3000/product";
+            var url="product";
             this.axios.get(url).then(result=>{
                 var rows=this.product.concat(result.data.data);
                 this.product=rows;

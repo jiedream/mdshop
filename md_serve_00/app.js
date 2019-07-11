@@ -30,6 +30,24 @@ server.use(session({
 // 绑定建监听端口
 server.listen(3000);
 
+//登录
+server.get("/login",(req,res)=>{
+    var sql="SELECT uid FROM";
+    sql+=" md_user WHERE"; 
+    sql+=" uname=? AND upwd=?";
+    var uname=req.query.uname;
+    var upwd=req.query.upwd;
+    pool.query(sql,[uname,upwd],(err,result)=>{
+        if(err)throw err;
+        if(result.length==0){
+          res.send({code:-1,msg:"用户名或密码有误"});
+        }else{
+          req.session.uid = result[0].uid 
+          res.send({code:1,msg:"登录成功"});
+        }
+    });
+})
+
 // 轮播图
 server.get("/carousel",(req,res)=>{
     var sql="SELECT cid,img FROM md_carousel"

@@ -5,12 +5,14 @@ Vue.use(Router)
 
 
 import Home from './components/home.vue'
+import login from './components/login.vue'
 import dingdan from './components/dingdan.vue'
 import ShopCart from './components/shopcart.vue'
 import details from './components/details.vue'
 import my from './components/my.vue'
 export default new Router({
   routes: [
+    {path:'/login',component:login},
     {path:'/dingdan',component:dingdan},
     {path:'/cart',component:ShopCart},
     {path:'/my',component:my},

@@ -12,7 +12,9 @@ CREATE TABLE md_user(
     user_name VARCHAR(32)
 );
 #向用户表中插入数据
-INSERT INTO md_user VALUES(NULL,'tom','123456','汤姆');
+INSERT INTO md_user VALUES
+(NULL,'tom','123456','汤姆'),
+(NULL,'jerry','234567','杰瑞');
 
 
 #创建轮播图 图片表

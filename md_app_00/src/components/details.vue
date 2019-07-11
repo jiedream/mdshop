@@ -63,7 +63,7 @@ export default {
         },
         // 跳转成功加载服务器商品数据
         loadDetails(){
-           var url=`http://127.0.0.1:3000/details`
+           var url='details'
            var obj={pid:this.pid}
            this.axios.get(url,{params:obj}).then(result=>{
                var rows=this.proList.concat(result.data.data)[0];
